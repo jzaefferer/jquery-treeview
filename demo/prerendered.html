@@ -5,7 +5,6 @@
 	<title>jQuery treeview</title>
 
 	<link rel="stylesheet" href="../jquery.treeview.css" />
-    <link rel="stylesheet" href="../red-treeview.css" />
 	<link rel="stylesheet" href="screen.css" />
 	
 	<script src="../lib/jquery.js" type="text/javascript"></script>
@@ -16,7 +15,7 @@
 		$(function() {
 			$("#tree").treeview({
 				collapsed: true,
-				animated: "medium",
+				animated: "fast",
 				control:"#sidetreecontrol",
 				prerendered: true,
 				persist: "location"
@@ -39,7 +38,7 @@
 
   <ul class="treeview" id="tree">
 
-	<li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="?/index.cfm"><strong>Home</strong></a>
+	<li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="?/index.cfm">Home</a>
 	<ul style="display: none;">
 		<li><a href="?/enewsletters/index.cfm">Airdrie eNewsletters </a></li>
 		<li><a href="?/index.cfm">Airdrie Directories</a></li>
@@ -60,7 +59,7 @@
 
 	</ul>
 	</li>
-	<li class="expandable"><div class="hitarea expandable-hitarea"></div><span><strong>City Services</strong></span>
+	<li class="expandable"><div class="hitarea expandable-hitarea"></div><span>City Services</span>
 	<ul style="display: none;">
 		<li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="?/assessment/index.cfm">Assessment</a>
 		<ul style="display: none;">
@@ -187,7 +186,7 @@
 	</ul>
 	</li>
 
-	<li class="expandable"><div class="hitarea expandable-hitarea"></div><span><strong>News</strong></span>
+	<li class="expandable"><div class="hitarea expandable-hitarea"></div><span>News</span>
 	<ul style="display: none;">
 		<li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="?/enewsletters/index.cfm">Airdrie eNewsletters</a>
 		<ul style="display: none;">
@@ -234,7 +233,7 @@
 	</ul>
 	</li>
 
-	<li class="expandable"><div class="hitarea expandable-hitarea"></div><span><strong>City Council &amp; Administration </strong></span>
+	<li class="expandable"><div class="hitarea expandable-hitarea"></div><span>City Council &amp; Administration </span>
 	<ul style="display: none;">
 		<li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="?/election/index.cfm">2007 Election</a>
 		<ul style="display: none;">
@@ -348,7 +347,7 @@
 		<li class="last"><a href="?/org_chart/index.cfm">Organizational Chart</a></li>
 	</ul>
 	</li>
-	<li class="expandable"><div class="hitarea expandable-hitarea"></div><strong><a href="?#">Lifestyle</a></strong>
+	<li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="?lifestyle">Lifestyle</a>
 
 	<ul style="display: none;">
 		<li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="?/about_airdrie/index.cfm">About Airdrie</a>
@@ -364,7 +363,6 @@
 
 			<li><a href="?http://www.airdriepubliclibrary.ca/" target="_new">Airdrie Public Library</a></li>
 			<li><a href="?/arts_culture/airdrie_rodeo_ranch.cfm">Airdrie Rodeo Ranch</a></li>
-			<li><a href="?/bert_church_theatre/index.cfm">Bert Church LIVE Theatre</a></li>
 			<li><a href="?/twinning_program/index.cfm">Korean Twinning Program</a></li>
 
 			<li><a href="?/arts_culture/little_theatre_association.cfm">Little Theatre Association</a></li>
@@ -538,9 +536,8 @@
 	</ul>
 
 	</li>
-	<li class="expandable"><div class="hitarea expandable-hitarea"></div><strong><a href="?#">Visiting</a></strong>
+	<li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="?visiting">Visiting</a>
 	<ul style="display: none;">
-		<li><a href="?/economic_development/video/index.cfm">Airdrie LIFE Video</a></li>
 		<li><a href="?/gis/recreation_map/index.cfm">Community Map</a></li>
 
 		<li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="?/events/index.cfm">Events</a>
@@ -569,7 +566,7 @@
 
 	</ul>
 	</li>
-	<li class="expandable"><div class="hitarea expandable-hitarea"></div><strong><a href="?/economic_development/index.cfm">Doing Business</a></strong>
+	<li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="?/economic_development/index.cfm">Doing Business</a>
 
 	<ul style="display: none;">
 		<li class="expandable"><div class="hitarea expandable-hitarea"></div><a href="?/economic_development/business_attraction/index.cfm">Business Attraction</a>
@@ -611,7 +608,7 @@
 
 	</ul>
 	</li>
-	<li class="last"><strong><a href="?https://vch.airdrie.ca/index.cfm">Online Services</a></strong></li>
+	<li class="last"><a href="?https://vch.airdrie.ca/index.cfm">Online Services</a></li>
 
 </ul>
 </div>

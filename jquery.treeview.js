@@ -253,7 +253,4 @@
 		hitarea: "hitarea"
 	});
 	
-	// provide backwards compability
-	$.fn.Treeview = $.fn.treeview;
-	
 })(jQuery);

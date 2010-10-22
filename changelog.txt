@@ -2,7 +2,8 @@
 -----
 * Fix for #2360
 * Added option cookieOptions: Passed through to $.cookie to set path, domain etc.
-
+* Tested with jQuery 1.2.x and 1.4.3
+* Fixed combination of persist: "location" and prerendered: true
 
 1.4
 ---

@@ -16,6 +16,7 @@
 
 ;(function($) {
 
+	// TODO rewrite as a widget, removing all the extra plugins
 	$.extend($.fn, {
 		swapClass: function(c1, c2) {
 			var c1Elements = this.filter('.' + c1);
@@ -63,6 +64,7 @@
 			return this.filter(":has(>ul)");
 		},
 		applyClasses: function(settings, toggler) {
+			// TODO use event delegation
 			this.filter(":has(>ul):not(:has(>a))").find(">span").unbind("click.treeview").bind("click.treeview", function(event) {
 				// don't handle click events on children, eg. checkboxes
 				if ( this == event.target )
@@ -202,9 +204,21 @@
 				deserialize();
 				break;
 			case "location":
-				var current = this.find("a").filter(function() { return this.href.toLowerCase() == location.href.toLowerCase(); });
+				var current = this.find("a").filter(function() {
+					return this.href.toLowerCase() == location.href.toLowerCase();
+				});
 				if ( current.length ) {
-					current.addClass("selected").parents("ul, li").add( current.next() ).show();
+					// TODO update the open/closed classes
+					var items = current.addClass("selected").parents("ul, li").add( current.next() ).show();
+					if (settings.prerendered) {
+						// if prerendered is on, replicate the basic class swapping
+						items.filter("li")
+							.swapClass( CLASSES.collapsable, CLASSES.expandable )
+							.swapClass( CLASSES.lastCollapsable, CLASSES.lastExpandable )
+							.find(">.hitarea")
+								.swapClass( CLASSES.collapsableHitarea, CLASSES.expandableHitarea )
+								.swapClass( CLASSES.lastCollapsableHitarea, CLASSES.lastExpandableHitarea );
+					}
 				}
 				break;
 			}

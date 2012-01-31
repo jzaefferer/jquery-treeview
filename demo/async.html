@@ -4,23 +4,23 @@
 
 	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
 	<title>jQuery async treeview</title>
-	
+
 	<link rel="stylesheet" href="../jquery.treeview.css" />
     <link rel="stylesheet" href="../red-treeview.css" />
 	<link rel="stylesheet" href="screen.css" />
-	
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<script src="jquery.cookie.js"></script>
 	<script src="../jquery.treeview.js" type="text/javascript"></script>
 	<script src="../jquery.treeview.edit.js" type="text/javascript"></script>
 	<script src="../jquery.treeview.async.js" type="text/javascript"></script>
-	
+
 	<script type="text/javascript">
 	function initTrees() {
 		$("#black").treeview({
 			url: "source.php"
 		})
-		
+
 		$("#mixed").treeview({
 			url: "source.php",
 			// add some additional, dynamic data and request with POST
@@ -43,25 +43,25 @@
 		});
 	});
 	</script>
-	
+
 	</head>
 	<body>
-	
+
 	<h1 id="banner"><a href="http://bassistance.de/jquery-plugins/jquery-plugin-treeview/">jQuery Treeview Plugin</a> Demo</h1>
 	<div id="main">
-	
+
 	<ul>
 		<li><a href=".">Main Demo</a></li>
 		<li><a href="source.phps">Server component used</a></li>
 	</ul>
-		
+
 	<h4>Lazy-loading tree</h4>
-	
+
 	<ul id="black">
 	</ul>
-	
+
 	<h4>Mixed pre and lazy-loading</h4>
-	
+
 	<ul id="mixed">
 		<li><span>Item 1</span>
 			<ul>
@@ -83,9 +83,9 @@
 			<span>Item 3</span>
 		</li>
 	</ul>
-	
+
 	<button id="refresh">Refresh both Trees</button>
-		
+
 </div>
- 
+
 </body></html>

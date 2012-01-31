@@ -9,13 +9,13 @@ Provides some options for customizing, an async-tree extension and an experiment
 ### Note that this project is not actively maintained anymore.  
 Check out [jsTree](http://www.jstree.com) for a more up to date plugin.
 
----
+---''
 
 #### [Demo](http://jquery.bassistance.de/treeview/demo/)
 
 #### [Download](https://github.com/jzaefferer/jquery-treeview/zipball/1.4.1)
 
-#### [Changelog](https://raw.github.com/jzaefferer/jquery-treeview/master/changelog.txt)
+#### [Changelog](https://raw.github.com/jzaefferer/jquery-treeview/master/changelog.md)
 
 
 ## Todo

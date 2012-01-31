@@ -4,20 +4,20 @@
 
 	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
 	<title>jQuery treeview</title>
-	
+
 	<link rel="stylesheet" href="../jquery.treeview.css" />
 	<link rel="stylesheet" href="screen.css" />
-	
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<script src="jquery.cookie.js"></script>
 	<script src="../jquery.treeview.js" type="text/javascript"></script>
 	<script src="../jquery.treeview.edit.js" type="text/javascript"></script>
-	
+
 	<script src="../../../ui/ui.core.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../../../ui/ui.droppable.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../jquery.treeview.sortable.js" type="text/javascript"></script>
-	
+
 	<style type="text/css" media="screen">
 		.drop {
 			background-color: #eee !important;
@@ -26,23 +26,23 @@
 		.bar {
 			border-bottom: 1px dotted blue;
 		}
-		
+
 		.float {
 			float: left;
 			border: 1px solid #aaa;
 			margin: 10px;
 			padding: 10px;
 		}
-		
+
 		div.treeview-helper {
 			border: 1px solid #aaa;
 			background: #fff;
 			padding: 5px;
 			padding-left: 25px;
 		}
-		
+
 	</style>
-		
+
 	<script type="text/javascript">
 		(function($) {
 			var CLASSES = $.treeview.classes;
@@ -62,15 +62,15 @@
 					}
 				});
 			};
-			
+
 		})(jQuery);
-	
-	
-	
-	
+
+
+
+
 	$.fn.sortableTreeview = function(o) {
 		this.each(function() {
-			
+
 			$(this).treeview().sortableTree({
 				connectWith: o.connectWith,
 				items: 'li',
@@ -98,7 +98,7 @@
 					ui.instance.element.treeview({add: ui.item});
 				}
 			});
-			
+
 			$(".folder", this).droppable({
 				accept: "li",
 				hoverClass: "drop",
@@ -113,30 +113,30 @@
 					ui.helper.css("outline", "2px solid red");
 				}
 			});
-			
-		});	
+
+		});
 	};
-	
-	
+
+
 		$(function() {
 
 
 			$("#browser, #browser2").sortableTreeview({ connectWith: ["#browser", "#browser2"] });
-			
+
 		})
-		
+
 	</script>
-	
+
 	</head>
 	<body>
-	
+
 	<h1 id="banner"><a href="http://bassistance.de/jquery-plugins/jquery-plugin-treeview/">jQuery Treeview Plugin</a> Demo</h1>
 	<div id="main">
-	
+
 	<a href=".">Main Demo</a>
 
 	<h4>Sample 1 - default, right-click to remove items</h4>
-	
+
 <div class="float">
 	<ul id="browser" class="filetree">
 		<li><span class="folder">Folder 1</span>
@@ -208,7 +208,7 @@
 		<li><span class="file">File 4</span></li>
 	</ul>
 </div>
-	
+
 	</div>
- 
+
 </body></html>

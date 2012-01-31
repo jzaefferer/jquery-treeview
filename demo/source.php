@@ -83,6 +83,6 @@ if ($_REQUEST['root'] == "source"):
 	{
 		"text": "4. Questions and answers"
 	}
-	
+
 ]
 <?php endif; ?>

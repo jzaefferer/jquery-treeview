@@ -7,9 +7,9 @@ Provides some options for customizing, an async-tree extension and an experiment
 ![screenshot](https://raw.github.com/jzaefferer/jquery-treeview/master/screenshot.png)
 
 ### Note that this project is not actively maintained anymore.  
-Check out [jsTree](http://www.jstree.com) for a more up to date plugin.
+Check out [jqTree](http://mbraak.github.com/jqTree/) for a more up to date plugin.
 
----''
+---
 
 #### [Demo](http://jquery.bassistance.de/treeview/demo/)
 

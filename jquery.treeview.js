@@ -162,6 +162,18 @@
 						.find( ">ul" )
 						.heightHide( settings.animated, settings.toggle );
 				}
+
+        if ( settings.collapsesubtree && $(this).parent().hasClass(CLASSES.expandable) ) {
+          $(this).parent().find('>ul')
+            .find('*')
+    					.replaceClass( CLASSES.collapsableHitarea, CLASSES.expandableHitarea )
+	  					.replaceClass( CLASSES.lastCollapsableHitarea, CLASSES.lastExpandableHitarea )
+		  				.replaceClass( CLASSES.collapsable, CLASSES.expandable )
+			  			.replaceClass( CLASSES.lastCollapsable, CLASSES.lastExpandable )
+            .end()
+              .find('ul')
+                .heightHide( settings.animated, settings.toggle );
+        }
 			}
 			this.data("toggler", toggler);
 

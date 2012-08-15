@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	// first example
-	$("#browser").treeview();
+	$("#browser").treeview({collapsesubtree: true});
 
 	// second example
 	$("#navigation").treeview({

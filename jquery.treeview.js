@@ -96,7 +96,10 @@
 		treeview: function(settings) {
 
 			settings = $.extend({
-				cookieId: "treeview"
+				cookieId: "treeview",
+				isNodeTheSelectedOneFunction: function(node) {
+					return node.href.toLowerCase() == location.href.toLowerCase();
+				}
 			}, settings);
 
 			if ( settings.toggle ) {
@@ -200,7 +203,7 @@
 				break;
 			case "location":
 				var current = this.find("a").filter(function() {
-					return this.href.toLowerCase() == location.href.toLowerCase();
+					return settings.isNodeTheSelectedOneFunction(this);
 				});
 				if ( current.length ) {
 					// TODO update the open/closed classes

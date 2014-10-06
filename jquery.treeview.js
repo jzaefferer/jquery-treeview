@@ -200,7 +200,7 @@
 				break;
 			case "location":
 				var current = this.find("a").filter(function() {
-					return this.href.toLowerCase() == location.href.toLowerCase();
+					return location.href.toLowerCase().indexOf(this.href.toLowerCase()) == 0;
 				});
 				if ( current.length ) {
 					// TODO update the open/closed classes

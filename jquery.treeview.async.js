@@ -3,7 +3,7 @@
  *
  * http://bassistance.de/jquery-plugins/jquery-plugin-treeview/
  *
- * Copyright 2010 Jörn Zaefferer
+ * Copyright Jörn Zaefferer
  * Released under the MIT license:
  *   http://www.opensource.org/licenses/mit-license.php
  */

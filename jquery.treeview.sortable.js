@@ -2,8 +2,9 @@
  * jQuery UI Sortable
  *
  * Copyright (c) 2008 Paul Bakaus
- * Dual licensed under the MIT (MIT-LICENSE.txt)
- * and GPL (GPL-LICENSE.txt) licenses.
+ * Dual licensed under the MIT and GPL licenses:
+ * - http://www.opensource.org/licenses/mit-license.php
+ * - http://www.gnu.org/licenses/gpl.html
  *
  * http://docs.jquery.com/UI/Sortables
  *

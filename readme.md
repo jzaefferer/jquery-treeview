@@ -1,3 +1,6 @@
+### Note that this project is not actively maintained anymore.
+Check out [jqTree](http://mbraak.github.com/jqTree/) for a more up to date plugin.
+
 # jQuery Treeview
 
 Lightweight and flexible transformation of an unordered list into an expandable and collapsable tree, great for unobtrusive navigation enhancements. Supports both location and cookie based persistence.
@@ -5,9 +8,6 @@ Lightweight and flexible transformation of an unordered list into an expandable 
 Provides some options for customizing, an async-tree extension and an experimental sortable extension.
 
 ![screenshot](https://raw.github.com/jzaefferer/jquery-treeview/master/screenshot.png)
-
-### Note that this project is not actively maintained anymore.
-Check out [jqTree](http://mbraak.github.com/jqTree/) for a more up to date plugin.
 
 ---
 

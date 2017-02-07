@@ -44,6 +44,9 @@ function load(settings, root, child, container) {
 			child.empty();
 			$.each(response, createNode, [child]);
 	        $(container).treeview({add: child});
+			if (settings.onAsyncBranchAdd) {
+				settings.onAsyncBranchAdd(child);
+			}
 	    }
 	}, settings.ajax));
 	/*

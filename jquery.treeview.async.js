@@ -18,6 +18,8 @@ function load(settings, root, child, container) {
 		}
 		if (this.expanded) {
 			current.addClass("open");
+		}else{
+			current.addClass("closed");
 		}
 		if (this.hasChildren || this.children && this.children.length) {
 			var branch = $("<ul/>").appendTo(current);

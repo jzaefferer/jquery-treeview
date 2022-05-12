@@ -23,11 +23,11 @@
 		},
 		hoverClass: function(className) {
 			className = className || "hover";
-			return this.hover(function() {
-				$(this).addClass(className);
-			}, function() {
-				$(this).removeClass(className);
-			});
+            return this.on("mouseenter", function () {
+                $(this).addClass(className);
+            }).on("mouseleave", function () {
+                $(this).removeClass(className);
+            });
 		},
 		heightToggle: function(animated, callback) {
 			animated ?

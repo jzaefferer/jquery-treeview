@@ -1,3 +1,13 @@
+
+1.4.2 mod
+---
+* Jquery 3.x fixes: [shorthand-deprecated-v3] JQMIGRATE: jQuery.fn.click() event shorthand is deprecated and [pre-on-methods] JQMIGRATE: jQuery.fn.unbind() is deprecated
+
+1.4.2
+---
+TODO
+
+
 1.4.1
 -----
 * Fix for #2360

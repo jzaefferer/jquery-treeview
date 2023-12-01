@@ -1,5 +1,5 @@
 ### Note that this project is not actively maintained anymore.
-Check out [jqTree](http://mbraak.github.com/jqTree/) for a more up to date plugin.
+Check out [jqTree](https://mbraak.github.io/jqTree/) for a more up to date plugin.
 
 # jQuery Treeview
 
